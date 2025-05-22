@@ -1,0 +1,14 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#87CEEB" />
+  <text x="200" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Fizzy Lifting Room</text>
+  <!-- Bubbles -->
+  <g fill="white" opacity="0.7">
+    <circle cx="100" cy="140" r="8" />
+    <circle cx="130" cy="160" r="5" />
+    <circle cx="150" cy="120" r="10" />
+    <circle cx="200" cy="150" r="7" />
+    <circle cx="250" cy="130" r="9" />
+    <circle cx="280" cy="160" r="6" />
+    <circle cx="320" cy="140" r="8" />
+  </g>
+</svg> 

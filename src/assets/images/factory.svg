@@ -1,0 +1,12 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#6f42c1" />
+  <text x="400" y="200" font-family="Arial" font-size="40" fill="white" text-anchor="middle">Wonka Factory</text>
+  <g fill="none" stroke="white" stroke-width="4">
+    <rect x="100" y="100" width="600" height="200" rx="10" />
+    <polyline points="150,100 150,50 250,50 250,100" />
+    <rect x="300" y="50" width="100" height="50" />
+    <rect x="450" y="150" width="100" height="150" />
+    <circle cx="200" cy="200" r="30" />
+    <circle cx="600" cy="200" r="30" />
+  </g>
+</svg> 

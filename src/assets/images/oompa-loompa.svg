@@ -1,0 +1,20 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#FF6B35" />
+  <text x="200" y="60" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Oompa Loompa</text>
+  
+  <!-- Simple Oompa Loompa figure -->
+  <g transform="translate(200, 130) scale(1.2)">
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="15" fill="#FFA07A" />
+    <!-- Green hair -->
+    <ellipse cx="0" cy="-32" rx="15" ry="5" fill="#4CAF50" />
+    <!-- Body -->
+    <rect x="-10" y="-5" width="20" height="30" fill="white" />
+    <!-- Arms -->
+    <line x1="-10" y1="0" x2="-25" y2="-10" stroke="#FFA07A" stroke-width="5" />
+    <line x1="10" y1="0" x2="25" y2="-10" stroke="#FFA07A" stroke-width="5" />
+    <!-- Legs -->
+    <line x1="-5" y1="25" x2="-10" y2="45" stroke="#4CAF50" stroke-width="7" />
+    <line x1="5" y1="25" x2="10" y2="45" stroke="#4CAF50" stroke-width="7" />
+  </g>
+</svg> 
