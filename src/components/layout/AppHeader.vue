@@ -14,6 +14,11 @@
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/tours">Factory Tours</router-link></li>
           <li><router-link to="/my-tickets">My Tickets</router-link></li>
+          <li>
+            <router-link to="/ecosystem" @click="trackEcosystemClick">
+              Slugworth Ecosystem
+            </router-link>
+          </li>
         </ul>
       </nav>
       
@@ -33,6 +38,16 @@ import { useTicketStore } from '../../stores/ticketStore';
 
 const store = useTicketStore();
 const cartCount = computed(() => store.cart.length);
+
+// Track ecosystem navigation with Pendo
+const trackEcosystemClick = () => {
+  if (window.pendo) {
+    window.pendo.track('Ecosystem Page Visited', {
+      source: 'Header Navigation',
+      app: 'Golden Ticket Booking'
+    });
+  }
+};
 </script>
 
 <style scoped>

@@ -16,6 +16,7 @@ import TourDetails from './views/TourDetails.vue'
 import SeatSelection from './views/SeatSelection.vue'
 import Checkout from './views/Checkout.vue'
 import MyTickets from './views/MyTickets.vue'
+import Ecosystem from './views/Ecosystem.vue'
 
 // Initialize Pendo
 window.pendo.initialize({
@@ -36,7 +37,8 @@ const router = createRouter({
     { path: '/tours/:id', component: TourDetails },
     { path: '/seat-selection/:id', component: SeatSelection },
     { path: '/checkout', component: Checkout },
-    { path: '/my-tickets', component: MyTickets }
+    { path: '/my-tickets', component: MyTickets },
+    { path: '/ecosystem', component: Ecosystem }
   ]
 })
 

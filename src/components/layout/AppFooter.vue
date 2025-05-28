@@ -26,6 +26,16 @@
       </div>
       
       <div class="footer-section">
+        <h4 class="footer-heading">Slugworth Ecosystem</h4>
+        <div class="ecosystem-links">
+          <a href="https://slugworth-corp.vercel.app/" class="ecosystem-link" @click="trackAppNavigation('Slugworth Corp')">
+            Slugworth Corp
+          </a>
+          <a href="https://oompa-social.vercel.app/login" class="ecosystem-link" @click="trackAppNavigation('Oompa Social')">
+            Oompa Social
+          </a>
+          <span class="ecosystem-link current">Golden Ticket Booking</span>
+        </div>
         <button @click="trackButtonClick" class="feedback-btn">Give Feedback</button>
       </div>
     </div>
@@ -47,6 +57,17 @@ const trackButtonClick = () => {
     window.pendo.track('Feedback Button Clicked');
   }
   alert('Thank you for your interest in providing feedback!');
+};
+
+// Track cross-app navigation with Pendo
+const trackAppNavigation = (destination) => {
+  if (window.pendo) {
+    window.pendo.track('Cross App Navigation', {
+      source: 'Golden Ticket Booking',
+      destination: destination,
+      navigationPoint: 'Footer'
+    });
+  }
 };
 </script>
 
@@ -107,6 +128,30 @@ address {
   line-height: 1.5;
 }
 
+.ecosystem-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ecosystem-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1.5;
+}
+
+.ecosystem-link:hover {
+  color: var(--secondary-color);
+}
+
+.ecosystem-link.current {
+  color: var(--secondary-color);
+  font-weight: bold;
+  cursor: default;
+}
+
 .feedback-btn {
   background-color: var(--secondary-color);
   color: var(--text-color);
@@ -116,6 +161,7 @@ address {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-top: 0.5rem;
 }
 
 .feedback-btn:hover {
