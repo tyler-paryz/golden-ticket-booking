@@ -20,9 +20,6 @@ import Ecosystem from './views/Ecosystem.vue'
 
 // Initialize Pendo
 window.pendo.initialize({
-  visitor: {
-    id: 'VISITOR-UNIQUE-ID' // Replace with actual unique ID in production
-  },
   account: {
     id: 'ACCOUNT-UNIQUE-ID' // Replace with actual account ID in production
   }
